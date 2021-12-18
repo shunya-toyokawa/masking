@@ -2,6 +2,8 @@ from rembg.bg import remove
 import numpy as np
 import io
 from PIL import Image
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 input_path = 'input.png'
 output_path = 'cutout.png'
