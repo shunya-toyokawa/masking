@@ -91,6 +91,10 @@ def remove(
     img = Image.open(io.BytesIO(data)).convert("RGB")
     mask = detect.predict(model, np.array(img)).convert("L")
 
+    output_path = './masked.png'
+    mask = mask.resize(img.size)
+    mask.save(output_path)
+
     if alpha_matting:
         try:
             cutout = alpha_matting_cutout(
