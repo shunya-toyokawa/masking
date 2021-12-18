@@ -12,7 +12,9 @@ apt update && apt upgrade -y && apt install g++ gcc git neovim make cmake git wg
 
 ```
 pip install -U pip
+pip install numpy==1.20.0 matplotlib 
 pip install torch==1.7.1+cpu torchvision==0.8.2+cpu -f https://download.pytorch.org/whl/torch_stable.html
+
 ```
 
 ```
