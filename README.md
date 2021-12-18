@@ -20,3 +20,11 @@ pip install torch==1.7.1+cpu torchvision==0.8.2+cpu -f https://download.pytorch.
 ```
 pip install -e masking
 ```
+
+
+
+サンプルデータ
+```
+wget https://www.pakutaso.com/shared/img/thumb/nekocatPAR591482434_TP_V.jpg
+mv nekocatPAR591482434_TP_V.jpg input.png
+```
