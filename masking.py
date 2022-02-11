@@ -13,6 +13,6 @@ result = remove(f,
                 alpha_matting=True,
                 alpha_matting_foreground_threshold=240,
                 alpha_matting_background_threshold=10,
-                alpha_matting_erode_structure_size=6)
+                alpha_matting_erode_structure_size=10)
 img = Image.open(io.BytesIO(result)).convert("RGBA")
 img.save(output_path)
