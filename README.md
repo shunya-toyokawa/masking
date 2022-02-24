@@ -1,9 +1,17 @@
 # Masking
 
+
+
+
+
+
+
 python>=3.8
 numpy<=1.20.0
 
  
+ 
+  
 ```
 docker run -it --name <NAME> --gpus '"device=0,1,2,3,4,5,6,7"' -v ~:/work --shm-size=2g  andrewseidl/nvidia-cuda:10.2-devel-ubuntu20.04 bash
 ```
@@ -33,3 +41,14 @@ pip install -e masking
 wget https://www.pakutaso.com/shared/img/thumb/nekocatPAR591482434_TP_V.jpg
 mv nekocatPAR591482434_TP_V.jpg input.png
 ```
+
+
+
+## もしくは以下
+```
+## もしくは以下
+docker run -it --name <NAME> --gpus '"device=0,1,2,3,4,5,6,7"' -v ~:/work --shm-size=2g  shunyatoyokawa/masking:latest bash
+```
+
+
+
